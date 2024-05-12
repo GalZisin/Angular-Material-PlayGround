@@ -1,0 +1,8 @@
+.filter-container {
+    display: flex;
+
+    & .arrival-filter,
+    & .date-picker-filter {
+        margin-left: 1rem;
+    }
+}
