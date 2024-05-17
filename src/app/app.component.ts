@@ -20,4 +20,7 @@ export class AppComponent {
   filterTable() {
     this.router.navigateByUrl(`/filter-table`);
   }
+  ToForm() {
+    this.router.navigateByUrl(`/mat-fields`);
+  }
 }
