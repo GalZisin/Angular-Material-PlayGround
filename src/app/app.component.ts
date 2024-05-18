@@ -12,7 +12,7 @@ import { MatButtonModule } from '@angular/material/button';
 })
 export class AppComponent {
   router = inject(Router);
-  title = signal<string>('material-playground');
+  title = signal<string>('material-playground!!!');
 
   simpleTable() {
     this.router.navigateByUrl(`/table`);
