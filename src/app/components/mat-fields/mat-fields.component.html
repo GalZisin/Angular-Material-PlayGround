@@ -1,26 +1,25 @@
 <div class="d-flex justify-content-end mx-5">
     <!-- <div class="col-md-6"> -->
-    <form [formGroup]="myForm" dir="rtl">
+    <form [formGroup]="myForm">
         <div class="row">
-            <div class="col-md-2">כותרת:1</div>
             <div class="col-md-10">
                 <div class="row">
+                    <div class="col-md-10"></div>
                     <div class="col-md-2">
                         <mat-form-field appearance="fill" class="w-100">
                             <input matInput aria-label="input" type="text" formControlName="input1" id="input1">
                         </mat-form-field>
                     </div>
-                    <div class="col-md-10">
-                    </div>
                 </div>
             </div>
-
+            <div class="col-md-2 text-end">כותרת:1</div>
         </div>
+
         <div class="row">
-            <div class="col-md-2">תאריך התחלה:</div>
+
             <div class="col-md-10">
-                <div class="row">
-                    <div class="col-md-2">
+                <div class="row d-flex justify-content-end">
+                    <div class="col-md-2 text-start">
                         <mat-form-field appearance="fill" class="w-100">
                             <mat-select formControlName="select1">
                                 <mat-option value="option1">Option 1</mat-option>
@@ -29,6 +28,7 @@
                             </mat-select>
                         </mat-form-field>
                     </div>
+                    <div class="col-md-2 text-start">תאריך סיום:</div>
                     <div class="col-md-2">
                         <mat-form-field appearance="fill" class="w-100">
                             <mat-select formControlName="select1">
@@ -48,8 +48,7 @@
                             </mat-select>
                         </mat-form-field>
                     </div>
-                    <div class="col-md-2 text-start">תאריך סיום:</div>
-                    <div class="col-md-2 text-start">
+                    <div class="col-md-2">
                         <mat-form-field appearance="fill" class="w-100">
                             <mat-select formControlName="select1">
                                 <mat-option value="option1">Option 1</mat-option>
@@ -58,39 +57,46 @@
                             </mat-select>
                         </mat-form-field>
                     </div>
+
+
+
                 </div>
             </div>
+            <div class="col-md-2 text-end">תאריך התחלה:</div>
         </div>
+
+
         <div class="row">
-            <div class="col-md-2">כותרת:3</div>
             <div class="col-md-10">
                 <div class="row">
-                    <div class="col-md-4">
-                        <mat-form-field appearance="fill" class="w-100">
-                            <mat-select formControlName="select1">
-                                <mat-option value="option1">Option 1</mat-option>
-                                <mat-option value="option2">Option 2</mat-option>
-                                <mat-option value="option3">Option 3</mat-option>
-                            </mat-select>
-                        </mat-form-field>
-                    </div>
+                    <div class="col-md-4"></div>
                     <div class="col-md-4">
                         <mat-form-field appearance="fill" class="w-100">
                             <input matInput aria-label="input2" type="text" formControlName="input1" id="input2">
                         </mat-form-field>
                     </div>
-                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <mat-form-field appearance="fill" class="w-100">
+                            <mat-select formControlName="select1">
+                                <mat-option value="option1">Option 1</mat-option>
+                                <mat-option value="option2">Option 2</mat-option>
+                                <mat-option value="option3">Option 3</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
                 </div>
             </div>
+            <div class="col-md-2 text-end">כותרת:3</div>
         </div>
+
         <div class="row">
-            <div class="col-md-2">חשיבות:</div>
-            <div class="col-md-10">
+            <div class="col-md-10 text-end">
                 <mat-radio-group formControlName="radioGroup">
                     <mat-radio-button value="option1">אופציה 1</mat-radio-button>
                     <mat-radio-button value="option2">אופציה 2</mat-radio-button>
                 </mat-radio-group>
             </div>
+            <div class="col-md-2 text-end">חשיבות:</div>
         </div>
     </form>
     <!-- </div> -->
