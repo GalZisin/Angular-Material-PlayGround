@@ -1,4 +1,4 @@
-<div class="d-flex justify-content-end mx-5">
+<div class="mx-5">
     <!-- <div class="col-md-6"> -->
     <form [formGroup]="myForm">
         <div class="row">
@@ -97,6 +97,59 @@
                 </mat-radio-group>
             </div>
             <div class="col-md-2 text-end align-self-center">חשיבות:</div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-xxl-4 col-xl-5">
+                <div class="row">
+                    <div class="col-md-3 text-end">
+                        <mat-form-field appearance="fill" class="w-100">
+                            <input matInput aria-label="input" type="text" formControlName="input1" id="input1">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <mat-form-field class="w-100">
+                            <mat-label>Choose a date</mat-label>
+                            <input matInput aria-label="input" [matDatepicker]="picker1">
+                            <mat-hint>MM/DD/YYYY</mat-hint>
+                            <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
+                            <mat-datepicker #picker1></mat-datepicker>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-3 text-end">3xxxx</div>
+                </div>
+            </div>
+            <div class="col-xxl-4 col-xl-2"></div>
+            <div class="col-xxl-4 col-xl-5">
+                <div class="row d-flex justify-content-end">
+                    <div class="col-md-3 text-end">
+                        <mat-form-field appearance="fill" class="w-100">
+                            <input matInput aria-label="input" type="text" formControlName="input1" id="input1">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <mat-form-field class="w-100">
+                            <mat-label>Choose a date</mat-label>
+                            <input matInput aria-label="input" [matDatepicker]="picker2">
+                            <mat-hint>MM/DD/YYYY</mat-hint>
+                            <mat-datepicker-toggle matIconSuffix [for]="picker2"></mat-datepicker-toggle>
+                            <mat-datepicker #picker2></mat-datepicker>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-3 text-end">6xxxx</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-xxl-9"></div>
+            <div class="col-xxl-2 text-end">
+                <mat-form-field appearance="fill" class="w-100">
+                    <input matInput aria-label="input" type="text" formControlName="input1" id="input1">
+                </mat-form-field>
+            </div>
+            <div class="col-xxl-1 text-end">xxxx1</div>
         </div>
     </form>
     <!-- </div> -->
